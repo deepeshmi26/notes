@@ -1,7 +1,7 @@
 # HTTP, WebSocket, SSE, and HTTP Streaming — How They Build on TCP 
 
 > 📘 **Note:**  
-> This file assumes you’ve already read the **[TCP vs UDP Overview](./TCP_vs_UDP.md)**.  
+> This file assumes you’ve already read the **[TCP vs UDP Overview](./networking_tcp%20vs%20udp.md)**.  
 > That file explains the foundational transport layer behaviors these protocols rely on.
 
 TLDR:
