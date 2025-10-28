@@ -1,22 +1,22 @@
-# HTTP, WebSocket, SSE, and HTTP Streaming — How They Build on TCP
+# HTTP, WebSocket, SSE, and HTTP Streaming — How They Build on TCP 
 
 > 📘 **Note:**  
 > This file assumes you’ve already read the **[TCP vs UDP Overview](./TCP_vs_UDP.md)**.  
 > That file explains the foundational transport layer behaviors these protocols rely on.
 
 TLDR:
-HTTP - Built on TCP to standardize request-resposne structure. 
-Websocket - uses HTTP for connection and raw TCP for sending data. Bidirectional, expensive, CDN/proxy might not work.
-HTTP streaming - Built on HTTP. Unidirectional, any response data type, parser logic required.
-SSE - Built on HTTP streaming to standardize the response data type to be text, response buffered by CDN, supported mainly by browsers(not by apps)
----
+- HTTP - Built on TCP to standardize request-resposne structure.
+- Websocket - uses HTTP for connection and raw TCP for sending data. Bidirectional, expensive, CDN/proxy might not work.
+- HTTP streaming - Built on HTTP. Unidirectional, any response data type, parser logic required.
+- SSE - Built on HTTP streaming to standardize the response data type to be text, response buffered by CDN, supported mainly by browsers(not by apps)
 
 When to choose which: 
 1. Simple request-response - http(rest or graphql etc.)
 2. Live unidirectional text response(json as text) - SSE
 3. Live unidirectional + response data type is anything - http streaming
-4. Bidirectional + one direction is more active that other(e.g. chatgpt) - http streaming/SSE + POST
-5. Bidirectional + both directions are highly active - Websocket 
+4. Bidirectional + one direction is more active that other(e.g. chatgpt) - http streaming/SSE + POST(Rest call)
+5. Bidirectional + both directions are highly active - Websocket
+6. Choose mix of things if needed.
 
 ## 🌐 **1. HTTP (HyperText Transfer Protocol)**
 
