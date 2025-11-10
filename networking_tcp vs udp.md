@@ -50,7 +50,7 @@
 - **Stateful connections** → each session consumes memory.
 
 **Clarifying question discussed:**
-> “Does TCP only send acknowledgements?”
+> “Does TCP client only send acknowledgements?”
 → No. Both sides send **data + acknowledgements**. TCP is **full-duplex** — both can send simultaneously.
 
 ---
