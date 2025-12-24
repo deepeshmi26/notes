@@ -13,7 +13,7 @@ The goal is clarity, not protocol-level detail.
 - **OAuth** → Delegate access safely  
 - **SAML** → Company owns identity  
 
-## Big Picture
+## When to use
 
 Different problems need different tools:
 
