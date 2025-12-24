@@ -127,19 +127,19 @@ A trusted authority(e.g. google) issues a token that allows only specific action
 
 ---
 
-## 5. SAML
+## 5. SAML(Security Assertion Markup Language)
 
 **Problem**  
 A company wants to control employee identity centrally instead of letting every app manage logins.
 
 **Solution**  
-Applications trust the company to confirm whether a user is valid.
+Applications trust the company to confirm whether a user is valid. This is the reason why microsoft asks for company domain(address) i.e to verify identity.
 
 **Mental model**  
 > “Ask my employer if I’m valid. Don’t ask me.”
 
 **Key traits**
-- Company-controlled authentication
+- Company-controlled authentication, authorization is still controlled by individual apps.
 - Apps do not store passwords
 - Enables enterprise-wide SSO
 
