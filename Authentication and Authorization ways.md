@@ -13,8 +13,6 @@ The goal is clarity, not protocol-level detail.
 - **OAuth** → Delegate access safely  
 - **SAML** → Company owns identity  
 
----
-
 ## Big Picture
 
 Different problems need different tools:
@@ -25,7 +23,7 @@ Different problems need different tools:
 - Apps need delegated access → OAuth  
 - Companies need authority → SAML  
 
-------------------------------------------------------------------------------------------------------
+---
 
 
 
