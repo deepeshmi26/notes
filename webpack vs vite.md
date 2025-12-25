@@ -1,7 +1,7 @@
 To understand when to use webpack & when to use vite, first understand why vite is faster than webpack. If the write up seems too long, read the TLDR's.
 ## ⚡ Why Vite Is Faster Than Webpack
 
-Vite achieves faster builds not by doing the same work quicker, but by **doing less work overall** — and doing it smarter.
+Vite achieves faster builds not by doing the same work quicker & also by **doing less work overall** — and doing it smarter.
 
 ### 🧩 Key Reasons
 
