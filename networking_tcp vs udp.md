@@ -46,7 +46,7 @@
 
 **How this impacts features/drawbacks**
 - **Reliable and ordered data** → perfect for text, files, API calls.
-- **Extra control overhead** → adds latency.
+- **Extra control overhead** → adds latency + increases size of the packets.
 - **Stateful connections** → each session consumes memory.
 
 **Clarifying question discussed:**
