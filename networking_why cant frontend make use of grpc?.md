@@ -1,5 +1,6 @@
 # Why browsers hide HTTP implementation behind intent APIs (like `fetch`)
 This also answers the question "Why cant you use GRPC in frontend"? Because GRPC makes use of HTTP/2 and even though browser makes use of http/2, browser hides http implementation behind intent apis(like `fetch`) 
+But, as of 2024, grpc-web library is capable of supporting grpc connections from frontend.
 
 ## 1. Security - browser is the boundary between web code and the network stack(including our backend server)
 
