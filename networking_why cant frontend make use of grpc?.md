@@ -1,7 +1,7 @@
 # Why browsers hide HTTP implementation behind intent APIs (like `fetch`)
 This also answers the question "Why cant you use GRPC in frontend"? Because GRPC makes use of HTTP/2 and even though browser makes use of http/2, browser hides http implementation behind intent apis(like `fetch`) 
 
-## 1. Security boundary between web code and the network stack
+## 1. Security - browser is the boundary between web code and the network stack(including our backend server)
 
 Browsers run **untrusted JavaScript from any website**.  
 The browser network layer must enforce security policies like:
@@ -34,7 +34,7 @@ Trusted browser layer → enforces security
 
 ---
 
-## 2. Browser must manage connections globally (connection pooling & scheduling)
+## 2. Connection pooling & Scheduling - Browser must manage connections globally
 
 A browser is not a single application. It runs **many websites simultaneously**.
 
@@ -75,7 +75,7 @@ bandwidth scheduling
 
 ---
 
-## 3. The web platform must survive protocol evolution
+## 3. Protocolo evolution - The web platform must survive protocol evolution
 
 Internet protocols evolve over time.
 
@@ -119,7 +119,7 @@ Websites continue working even as protocols evolve.
 
 ---
 
-## 4. Prevent websites from turning HTTP into arbitrary transport tunnels
+## 4. Web infra(CDN, proxy etc) - Prevent websites from turning HTTP into arbitrary transport tunnels
 
 If JavaScript had HTTP/2 stream control, a site could run its **own custom protocol over HTTP**.
 
