@@ -15,8 +15,6 @@ HTTP/1.1 → multiple connections, sequential requests
 HTTP/2 → one connection, many parallel streams, reusable headers
 ```
 
-# Multi-lane highway analogy
-
 ## 1. HTTP/1.1 behaves like a single-lane road
 
 HTTP/1.1 connections work like a **single-lane road**: only one request can move through the connection at a time.  
